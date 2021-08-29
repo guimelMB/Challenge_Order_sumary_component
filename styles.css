@@ -1,0 +1,103 @@
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: #e0e8ff;
+  max-width: 1440px;
+}
+
+main {
+  background-color: white;
+  -webkit-box-shadow: #7280a7;
+          box-shadow: #7280a7;
+  border-radius: 1em;
+  max-width: 450px;
+  height: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  /* 3-row / 4-column grid container */
+  grid: repeat(4, auto)/repeat(3, auto);
+  gap: 10px;
+}
+
+main img {
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+main h1 {
+  font-size: 2em;
+  font-weight: 900;
+  color: #1f2f56;
+}
+
+main p {
+  color: #7280a7;
+  max-width: 75%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main div {
+  display: -ms-grid;
+  display: grid;
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f5f7ff;
+  justify-items: start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-grid-columns: max-content max-content;
+      grid-template-columns: -webkit-max-content -webkit-max-content;
+      grid-template-columns: max-content max-content;
+  color: #7280a7;
+}
+
+main div h2 {
+  font-size: 1em;
+  font-weight: 900;
+  color: #1f2f56;
+}
+
+main button {
+  padding: 1em;
+  border: 1em;
+  border-radius: 1em;
+}
+
+main #A {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+main #B {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+main #C {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+main #D {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+/*# sourceMappingURL=styles.css.map */
